@@ -1,0 +1,63 @@
+git clone remote.url
+	init project localy.
+
+
+git init
+	start tracking current directory
+
+git add file
+	stage file
+
+git add .
+	stage all changed files
+
+git branch
+	list all branches
+
+git branch branch_name
+	create new branch
+
+git checkout branch_name
+	switch to the named branch
+
+git push origin branch_name
+	push the changes to the remote branch
+
+git push
+	push the changes to the default remote branch
+
+git merge branch_name
+	merge the named branch to the active branch
+
+git config user.name "username"
+	set the user name for the current repository only
+
+git config user.email "user email"
+	set the user email for the current repository only
+
+git --global config user.name "user name"
+	set the user name for all repositories.
+
+git --global config user.email "user email"
+	set the user email for all repositries.
+
+git config --global core.excludesfile ~/.gitignore_global
+	create a global .gitignore file to list rules for ignoring files for all 
+	repositories
+	"Or using your favorite text editor, open the file .git/info/exclude in 
+	specific repository and list rules for ignoring files for that repository."
+	Example .gitignore files: https://github.com/github/gitignore
+
+git remote
+	give you the name of the remote repository.
+
+git remote -v
+	give the names and the links to the remote repositories.
+
+git push origin --delete <branchName>
+	delete the remote branch.
+
+git branch -d <branchName>
+	delete the local branch.
+
+
