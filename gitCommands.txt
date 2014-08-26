@@ -71,3 +71,24 @@ git remote set-url
 	remote url could be one of the following:
     	https://github.com/user/repo2.git if you're updating to use HTTPS
 	git@github.com:user/repo2.git if you're updating to use SSH
+
+git config push.default current
+	change the default push behavior for the repository, and instead of the "current" you can even set it to :
+	current, upstream, simple, and every one of them mean the follwing:
+	current:
+        "what" you are pushing is only your current branches (not the rest),
+        "to where" is to a branch of the same name (created if it doesn't exist) of the same name in the upstream repo.
+
+	upstream:
+        "what" is only the current branch,
+        "to where" is to whatever branch (not necessarily of the same name) of the upstream repo has been assigned as 
+	an upstream branch for the local branch you are pushing.
+
+	simple:
+	"git push" without any refspec will push the current branch out to the same name at the remote repository only 
+	when it is set to track the branch with the same name over there.
+	It is like "upstream", but refuses to push if the upstream branch's name is different from the local one.
+
+
+git config –global push.default current
+	exactly as the above command except it will set the changes across over all repositories.
