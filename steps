@@ -1,0 +1,21 @@
+GIT Steps:
+1- Register in github.
+2- send your user to me to add you to the project.
+3- in your favorite linux distro install git program.
+4- then excute these commands from your shell:
+	a. in your prefered directory run this command:
+		git clone https://github.com/majed316/simple.git
+	b. a directory named simple will be created in that directory.
+		"this is our project directory which we will work in"
+	c. do this couple of command to identify your self to git 	
+	program:
+		git config user.name "your github username"
+		git config user.email "your githun email"
+	d. Now in the simple directory there is all the project file 
+	you can start to edit or add or delete files. and after you did 
+	that to the level you feel you changes are deployable you need 
+	to fire up these command to deploy the changes to the master 
+	repository in github:
+		git add .
+		git commit -m "describe the change you've made"
+		git push origin master
