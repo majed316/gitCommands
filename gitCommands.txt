@@ -60,4 +60,14 @@ git push origin --delete <branchName>
 git branch -d <branchName>
 	delete the local branch.
 
+git remote add origin <url>
+	Add a remote repository, <usually this command follows 'git init'>
+	remote url could be one of the following:
+    	https://github.com/user/repo2.git if you're updating to use HTTPS
+	git@github.com:user/repo2.git if you're updating to use SSH
 
+git remote set-url
+	Changes an existing remote repository URL.
+	remote url could be one of the following:
+    	https://github.com/user/repo2.git if you're updating to use HTTPS
+	git@github.com:user/repo2.git if you're updating to use SSH
