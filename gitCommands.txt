@@ -35,10 +35,10 @@ git config user.name "username"
 git config user.email "user email"
 	set the user email for the current repository only
 
-git --global config user.name "user name"
+git config --global user.name "user name"
 	set the user name for all repositories.
 
-git --global config user.email "user email"
+git config --global user.email "user email"
 	set the user email for all repositries.
 
 git config --global core.excludesfile ~/.gitignore_global
